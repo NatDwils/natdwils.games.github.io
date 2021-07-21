@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ludo.games@ishika.nimade</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+ <link rel="stylesheet" href="ludo.css">
+</head>
+<body>
+    <div class="game">
+    <div class="header">
+        <h4>Lets PLAY Ludo!</h4>
+        <span id="result"></span>
+      </div>
+            <div class="mainframe">
+            <div class="diceboard">
+                <div class="info">
+                    <span class="playername">Player 1 
+                    </span>
+                    <div class="r-dice" onclick="dice(this,0)"></div>
+                </div>
+                <div class="info">
+                    
+                    <div class="b-dice" onclick="dice(this,3)">0
+                    </div>
+                    <span class="playername">
+                       Player 4 
+                    </span>
+                </div>
+            </div>
+            
+            <div class="mdiceboard">
+                <div class="info">
+                    <span class="mplayername">
+                       Player 1 
+                    </span>
+                    <div class="r-dice" onclick="dice(this,0)">
+                        0
+                    </div>
+                </div>
+                <div class="info">
+                     <span class="mplayername">
+                       Player 2 
+                    </span>
+                    <div class="g-dice" onclick="dice(this,1)">
+                        0
+                    </div>
+                   
+                </div>
+            </div>
+             <div class="ludoboard">
+                 <div class="red">
+                     <div class="playerzone">
+                     <div class="player"><span onclick="movered(this,0)" class="rp r material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="movered(this,1)" class="rp r material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="movered(this,2)" class="rp r material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="movered(this,3)" class="rp r material-icons">sentiment_very_satisfied</span></div>
+                     </div>
+                 </div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="green">
+                     <div class="playerzone">
+                     <div class="player"><span onclick="movegreen(this,0)" class="rp g material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="movegreen(this,1)" class="rp g material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="movegreen(this,2)" class="rp g material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="movegreen(this,3)" class="rp g material-icons">sentiment_very_satisfied</span></div>
+                     </div>
+                 </div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep greensafe"></div>
+                 <div class="astep gstop"></div>
+                 <div class="astep step rstop"></div>
+                 <div class="astep greensafe"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep greensafe"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep greensafe"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep greensafe"></div>
+                 <div class="astep step"></div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep rstop"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 
+                 <div class="centerbox"></div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step gstop"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep redsafe"></div>
+                 <div class="astep redsafe"></div>
+                 <div class="astep redsafe"></div>
+                 <div class="astep redsafe"></div>
+                 <div class="astep redsafe"></div>
+                 
+                 <div class="astep yellowsafe"></div>
+                 <div class="astep yellowsafe"></div>
+                 <div class="astep yellowsafe"></div>
+                 <div class="astep yellowsafe"></div>
+                 <div class="astep yellowsafe"></div>
+                 <div class="astep step"></div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step bstop"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep ystop"></div>
+                 <div class="astep step"></div>
+                 
+                 
+                 
+                 
+                 <div class="blue">
+                     <div class="playerzone">
+                     <div class="player"><span onclick="moveblue(this,0)" class="rp b b material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="moveblue(this,1)" class="rp b b material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="moveblue(this,2)" class="rp b b material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="moveblue(this,3)" class="rp b b material-icons">sentiment_very_satisfied</span></div>
+                     </div>
+                 </div>
+                 <div class="astep step"></div>
+                 <div class="astep bluesafe"></div>
+                 <div class="astep step"></div>
+                 <div class="yellow">
+                     <div class="playerzone">
+                     <div class="player"><span onclick="moveyellow(this,0)" class="rp y material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="moveyellow(this,1)" class="rp y material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="moveyellow(this,2)" class="rp y material-icons">sentiment_very_satisfied</span></div>
+                     <div class="player"><span onclick="moveyellow(this,3)" class="rp y material-icons">sentiment_very_satisfied</span></div>
+                     </div>
+                 </div>
+                 
+                 <div class="astep step"></div>
+                 <div class="astep bluesafe"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep bluesafe"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep bluesafe"></div>
+                 <div class="astep step ystop"></div>
+                 <div class="astep bstop"></div>
+                 <div class="astep bluesafe"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+                 <div class="astep step"></div>
+             </div>
+             <div class="diceboard">
+                 
+                <div class="info">
+                    <span class="playername">
+                       Player 2 
+                    </span>
+                    <div class="g-dice" onclick="dice(this,1)">
+                        0
+                    </div>
+                </div>
+                <div class="info">
+                    
+                    <div class="y-dice" onclick="dice(this,2)">
+                        0
+                    </div>
+                    <span class="playername">
+                       Player 3
+                    </span>
+                </div>
+            </div>
+            
+            <div class="mdiceboard">
+                <div class="info">
+                    
+                    <div class="b-dice" onclick="dice(this,3)">
+                        0
+                    </div>
+                    <span class="mplayername">
+                       Player 4 
+                    </span>
+                </div>
+                <div class="info">
+                    
+                    <div class="y-dice" onclick="dice(this,2)">
+                        0
+                    </div>
+                    <span class="mplayername">
+                       Player 3
+                    </span>
+                </div>
+            </div>
+         </div> 
+         <div class="footer">
+            <div class="name">
+                <type="text" class="ri">
+                <type="text" class="gi" >
+                <type="text" class="yi" >
+                <type="text" class="bi"><br>
+                <button class="play">PLAY</button>
+            </div> 
+        </div>
+        </div>
+</body>
+<script src="ludo.js"></script>
+</html>

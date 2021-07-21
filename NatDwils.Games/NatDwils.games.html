@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NatDwils.games@ishika.nimade</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body{
+  background-image: url("WELCOME.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+ }
+ .header{
+     padding: 30px;
+     background: rgba(0, 0, 0, 0.5);
+     text-align: center;
+     font-size: 100%;
+     font-family:'Times New Roman', Times, serif;
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+     margin: 0;
+ }
+ .header h2{
+     margin: 0;
+ }
+ .btn{
+     padding: 20px;
+     background-image: url(button.jpg);
+     background-size: cover;
+     width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 5px;
+ }
+ .btn:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.btn:hover:before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+ .welcome{
+    background-color: rgba(255, 236, 236, 0.384);
+    margin: 0;
+    padding: 30px;
+ }
+ .welcome h1{
+    margin: 0; 
+ }
+</style>
+
+<body>
+<div class="header"><h1 style="color: seashell;">NatDwils.Games@ishika.nimade</h1>
+<h3 style="color: cornsilk;">It's never too late to start working towards what you have already dreamed of!</h3>
+  </div>
+  <div class="welcome">
+  <h1 style="font-size: 300%;color: rgb(0, 0, 77);">WELCOME TO THE WORLD OF GAMES</h1>
+  <h2 style="color: rgb(0, 45, 112);">Play is our BRAIN'S favourate way of LEARNING</h2><br><br><br>
+  <a href="ludogame.js/ludo.game@ishika.nimade.html">
+  <button class="btn">Ludo</button><br></a>
+  <a href="tictactoe.js/tictactoe.games.html">
+  <button class="btn">Tic-Tac-Toe</button><br></a>
+  <a href="numberpuzzle.js/numberpuzzle.game@ishika.nimade.html">
+  <button class="btn">Number-Puzzle</button><br></a><br><br><br>
+  </div>
+  <div class="header">
+  <h2 style="font-size:300%; color: blanchedalmond;">JUST PLAY.....HAVE FUN.....ENJOY </h2>
+  </div>
+  
+</body>
+</html>

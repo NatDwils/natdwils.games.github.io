@@ -1,0 +1,142 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>tic-tac-toe.game@ishika.nimade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <style>
+        html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color:#003333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("istockphoto-168678735-612x612.jpg");
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  border: 1px solid #060055;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("th\ \(1\).jpg");
+  flex-direction: column;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+.header {
+  font-size: 20px;
+  color: #fdfdfd;
+  font-weight: bold;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game {
+  padding: 10px;
+  background-color: #080a6d;
+  border-radius: 2px;
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer button {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 80px;
+  background-color: #000000;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.footer span {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: auto 0;
+}
+
+
+#t{
+   height: 100px;
+   width: 100px;
+
+}
+
+
+
+td:hover{
+  background-color:rgba(24, 231, 210, 0.3);
+  cursor: pointer;
+  border-radius: 15px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="game">
+      <div class="header">
+        <h4>Lets PLAY tictactoe!</h4>
+        <div id="result"></div>
+      </div>
+<div class="grid">
+  <table>
+    <tr>
+      <td onclick=c1()  id="t"  class="td1" ></td>
+      <td  onclick=c2() id="t" class="td1" ></td>
+      <td   onclick=c3() id="t"  class="td1" ></td>
+    </tr>
+
+    <tr>
+      <td   onclick=c4() id="t"  class="td1"></td>
+      <td   onclick=c5() id="t"  class="td1" ></td>
+      <td   onclick=c6() id="t"  class="td1" ></td>
+    </tr>
+
+    <tr>
+      <td   onclick=c7() id="t"  class="td1" ></td>
+      <td   onclick=c8() id="t"  class="td1"></td>
+      <td  onclick=c9()  id="t"  class="td1" ></td>
+    </tr>
+    </table>
+
+</div>
+      <div class="footer"> 
+        <button onclick="document.location.reload(true)">Re-Play</button>
+            </div>
+  
+    </div>
+    </div>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
